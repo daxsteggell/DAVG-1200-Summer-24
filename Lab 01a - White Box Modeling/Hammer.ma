@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: Hammer.ma
-//Last modified: Wed, May 15, 2024 11:04:54 AM
+//Last modified: Wed, May 15, 2024 11:09:18 AM
 //Codeset: 1252
 requires maya "2025";
 requires "mtoa" "5.4.0";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "1D4AD9AF-481F-D13C-DDDE-BFB8F9133992";
+fileInfo "UUID" "4CA93548-4E06-8219-AC8C-DEABE88B053F";
 createNode transform -s -n "persp";
 	rename -uid "CCD8D8B2-4A58-34E8-70B7-598EEB031B17";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 78.192602400072147 57.289009176104443 29.237360272893326 ;
-	setAttr ".r" -type "double3" -24.938352754562182 6191.8000000000238 -1.0183154341556706e-14 ;
+	setAttr ".t" -type "double3" 11.062101997248257 24.889373624329103 -50.973069845880978 ;
+	setAttr ".r" -type "double3" -8.7383527547665558 5929.8000000000957 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F278BC26-4DC2-1F3F-99BF-70ADA98FF3A4";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 96.46454075162147;
+	setAttr ".coi" 47.17173142779037;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -6035,9 +6035,6 @@ createNode polyCylinder -n "polyCylinder2";
 	rename -uid "4441940C-4F82-91B3-E7EA-95BCCCB097B0";
 	setAttr ".sc" 1;
 	setAttr ".cuv" 3;
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "FD540A19-4D4B-C7A6-83F3-359AE8036F99";
-	setAttr ".sst" -type "string" "";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "E4F7B87E-449A-B618-CE62-D781A7378454";
 	setAttr ".b" -type "string" (
@@ -6085,6 +6082,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "4E1C5F3B-4938-49DA-2776-7982456F29AB";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "4BBA079C-4187-B61B-51C8-F2BB8720FC1D";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
