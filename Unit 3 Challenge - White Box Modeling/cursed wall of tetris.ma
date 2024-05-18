@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: cursed wall of tetris.ma
-//Last modified: Fri, May 17, 2024 08:50:25 PM
+//Last modified: Fri, May 17, 2024 09:00:11 PM
 //Codeset: 1252
 requires maya "2025";
 requires "mtoa" "5.4.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "A4C0ACFC-4C78-EA7E-540E-3B828D8F4ACE";
+fileInfo "UUID" "9083E8C8-4BF1-70C7-F833-A5906BB4BEDA";
 createNode transform -s -n "persp";
 	rename -uid "7A839657-45C0-723A-C20A-7EAB2003843B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 22.259220595486227 11.640458882613766 40.757365878580949 ;
-	setAttr ".r" -type "double3" -10.538352729652377 24.999999999998959 0 ;
+	setAttr ".t" -type "double3" 21.887165634606813 12.256481243232678 40.767807618214334 ;
+	setAttr ".r" -type "double3" -8.7383527296534016 -333.79999999999177 -8.8618696380011649e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2CCEDBEC-464E-C1CE-E02D-07981E6821E6";
 	setAttr -k off ".v" no;
@@ -3615,9 +3615,6 @@ createNode polyBevel3 -n "polyBevel1";
 	setAttr ".mv" yes;
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "ED3BE041-47BC-C61D-5157-AAAE2229E20D";
-	setAttr ".sst" -type "string" "";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "E0E958FC-49BF-CA29-D78D-FF84ABD9D31C";
 	setAttr ".b" -type "string" (
@@ -3665,6 +3662,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "02923017-4276-4ED1-DAAE-4BBBEC0D1E89";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "D5D2170B-4F2F-EBB5-D635-67BDE64D28E3";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
