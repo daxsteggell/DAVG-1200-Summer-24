@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: hammer mjolnir additive.ma
-//Last modified: Wed, Jun 05, 2024 11:25:48 PM
+//Last modified: Wed, Jun 05, 2024 11:30:37 PM
 //Codeset: 1252
 requires maya "2025";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.4.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "5353C682-423F-083B-5279-77916F0B4E27";
+fileInfo "UUID" "705BF100-4028-3B9B-BE6A-1F9002C6C7DC";
 createNode transform -s -n "persp";
 	rename -uid "5631C402-49FD-E213-6B34-7298C7B44BE9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -9.3804724690073815 5.0287255007343026 10.606992356259239 ;
-	setAttr ".r" -type "double3" -14.738352729763049 325.00000000019764 0 ;
+	setAttr ".t" -type "double3" -6.0222201266604083 6.4117969778195967 11.904234694215084 ;
+	setAttr ".r" -type "double3" -20.13835272976344 339.00000000016644 -4.2585440300433263e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1AA0A277-415C-7CD1-7258-D0A5EE64FFE7";
 	setAttr -k off ".v" no;
@@ -3692,7 +3692,7 @@ createNode polyTweakUV -n "polyTweakUV10";
 		 -1.068558455 -0.096418276 -1.07675004 -0.096418276 0.35947883 -0.30947763 -0.055163346
 		 -0.082890227;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "AAB5C332-42E9-1639-D725-83B097201D15";
+	rename -uid "890F9FB9-4F96-F794-A71A-41B8082D8A50";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
