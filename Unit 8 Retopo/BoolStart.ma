@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: BoolStart.ma
-//Last modified: Sat, Jun 22, 2024 06:57:24 AM
+//Last modified: Sat, Jun 22, 2024 07:00:47 AM
 //Codeset: 1252
 requires maya "2025";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.4.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "BAC66E2D-45F1-4BA5-AA5E-E9B509549640";
+fileInfo "UUID" "38B4E2A5-4F97-BE36-2EF3-A79307C3BFAD";
 createNode transform -s -n "persp";
 	rename -uid "2F96C5CC-CF48-3364-978F-BF80661D753F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 16.426423443623747 9.6450549802690819 -2.022421895607577 ;
-	setAttr ".r" -type "double3" -21.938352731485033 -632.59999999993295 3.5056714876046314e-14 ;
+	setAttr ".t" -type "double3" 15.652223443109877 11.057590812965405 -5.0449201505323469 ;
+	setAttr ".r" -type "double3" -26.738352731419248 -622.19999999999823 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F7E47E0A-8A46-F757-7132-5EBE985BE8D9";
 	setAttr -k off ".v" no;
@@ -79,7 +79,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "pSphere2";
 	rename -uid "05492E98-084B-5E07-5A98-209F11A8C777";
-	setAttr ".t" -type "double3" 1.4749253214799858 -0.46200011982578326 -3.3985504019462986 ;
+	setAttr ".t" -type "double3" 1.4990065525932252 -0.46200011982578326 -3.3083440026372961 ;
 	setAttr ".rp" -type "double3" -2.384185791015625e-07 4.0871316194534302 0.57305610179901123 ;
 	setAttr ".sp" -type "double3" -2.384185791015625e-07 4.0871316194534302 0.57305610179901123 ;
 createNode mesh -n "pSphere2Shape" -p "pSphere2";
@@ -1412,7 +1412,7 @@ createNode mesh -n "polySurfaceShape2" -p "transform2";
 	setAttr ".pt[83]" -type "float3"  0.0029796362 -0.015592098 0.022693634;
 createNode transform -n "polySurface3";
 	rename -uid "46E67EC8-4AD9-5CA5-DCF1-029E281EAEF9";
-	setAttr ".t" -type "double3" 1.5214956134288766 -0.47593794860729055 -3.3112419927130556 ;
+	setAttr ".t" -type "double3" 1.5214956134288766 -0.41517954670403689 -3.3112419927130556 ;
 	setAttr ".rp" -type "double3" 0.12615299224853516 3.0626245737075806 1.8508525937795639 ;
 	setAttr ".sp" -type "double3" 0.12615299224853516 3.0626245737075806 1.8508525937795639 ;
 createNode mesh -n "polySurface3Shape" -p "polySurface3";
@@ -2056,7 +2056,7 @@ createNode groupParts -n "groupParts2";
 	setAttr ".ihi" 0;
 	setAttr ".ic" -type "componentList" 1 "f[0:190]";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "965B011C-4427-CF7B-F209-33938F85249E";
+	rename -uid "6CCAE156-4C36-E43F-4208-0EB490B0D8B3";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
